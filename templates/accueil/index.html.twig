@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Le P'tit J@rdinier{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('styles/style.css') }}">
+{% endblock %}
+
+{% block body %}
+    {% block content %}
+        <div class="example-wrapper">
+            <h1>Le P'tit J@rdinier</h1>
+
+            <h2>Des professionnels à votre service !</h2>
+            <a href="{{ path('choix') }}">Obtenir un devis en ligne</a>
+            <div class="image">
+                <img src="{{ asset('image/jardinier.jpg') }}">
+            </div>
+        </div>
+    {% endblock %}
+{% endblock %}

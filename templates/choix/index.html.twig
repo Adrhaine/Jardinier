@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Choix{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('styles/style.css') }}">
+{% endblock %}
+
+{% block body %}
+    {% block content %}
+        <div class="form-wrapper choix-wrapper">
+            <h2>Vous êtes...</h2>
+            <form method="post" action="{{ path('mesure') }}">
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="user_type" value="particulier" checked>
+                    un Particulier
+                </label>
+            </div>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="user_type" value="entreprise">
+                    une Entreprise
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Suite</button>
+        </form>
+
+        </div>
+    {% endblock %}
+{% endblock %}

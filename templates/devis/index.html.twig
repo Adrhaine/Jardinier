@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Devis{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('styles/style.css') }}">
+{% endblock %}
+
+{% block body %}
+    {% block content %}
+        <div class="devis-container">
+            <h2>Votre devis</h2>
+            <div class="devis-details">
+                <p><span>Utilisateur :</span> {{ typeUtilisateur }}</p>
+                <p><span>Type de haie :</span> {{ typeHaie }}</p>
+                <p><span>Longueur :</span> {{ longueur }} mètres</p>
+                <p><span>Hauteur :</span> {{ hauteur }} mètres</p>
+                <p class="prix"><span>Prix total :</span> {{ prix }} €</p>
+            </div>
+            <a href="{{ path('accueil') }}" class="btn-retour">Retour à l'accueil</a>
+        </div>
+    {% endblock %}
+{% endblock %}

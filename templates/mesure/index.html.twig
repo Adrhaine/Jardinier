@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mesure{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('styles/style.css') }}">
+{% endblock %}
+
+{% block body %}
+    {% block content %}
+        <div class="form-wrapper mesure-wrapper">
+            <h1>Calcul de la haie</h1>
+            <form method="post" action="{{ path('devis') }}">
+                <label for="type">Choisir votre type de haie :</label>
+                <select id="type" name="type" required>
+                    <option value="">-- Choisir votre type de haie --</option>
+                    {% for haie in mesHaies %}
+                        <option value="{{ haie.code }}">
+                            {{ haie.nom }} ({{ haie.prix }}€)
+                        </option>
+                    {% endfor %}
+                </select>
+                <label for="longueur">Longueur :</label>
+                <input type="number" id="longueur" name="longueur" required>
+                <label for="hauteur">Hauteur :</label>
+                <input type="number" id="hauteur" name="hauteur" required>
+                <button type="submit" class="btn btn-primary">Suite</button>
+            </form>
+        </div>
+    {% endblock %}
+{% endblock %}

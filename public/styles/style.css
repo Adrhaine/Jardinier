@@ -1,0 +1,323 @@
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8e8; /* Fond vert clair */
+    color: #333;
+    text-align: center; /* Centrer tous les éléments par défaut */
+}
+
+/* Page Jardinier */
+.example-wrapper {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.example-wrapper h1 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.example-wrapper h2 {
+    font-size: 1.5rem;
+    color: #6d4c41;
+    margin-bottom: 20px;
+}
+
+/* Bouton "Obtenir un devis" */
+.example-wrapper a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.example-wrapper a:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Image ronde */
+.image {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Image ronde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Conteneurs centraux */
+.container,
+.form-wrapper {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres */
+h1, h2 {
+    text-align: center;
+    color: #4CAF50; /* Vert naturel */
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/* Champs de formulaire */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="radio"],
+select,
+input[type="number"],
+button {
+    margin-bottom: 15px;
+}
+
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Radio Buttons */
+.radio-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* Boutons */
+button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Page spécifique : Mesure */
+.mesure-wrapper h1 {
+    font-size: 1.8rem;
+}
+
+.mesure-wrapper select,
+.mesure-wrapper input {
+    margin-bottom: 10px;
+}
+
+.mesure-wrapper button {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Page Choix */
+.choix-wrapper {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Les éléments s'empilent */
+    align-items: center; /* Centrage horizontal */
+    justify-content: center; /* Centrage vertical */
+}
+
+/* Titre */
+.choix-wrapper h2 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Alignement des boutons radio */
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+    width: 100%; /* Largeur complète pour garder un alignement propre */
+    justify-content: center; /* Centrage horizontal */
+}
+
+.radio-group input[type="radio"] {
+    margin: 0;
+}
+
+.radio-group label {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Bouton centré */
+.choix-wrapper button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Centre le bouton horizontalement */
+}
+
+.choix-wrapper button:hover {
+    background-color: #45a049;
+}
+
+
+    .devis-wrapper {
+        margin: 2em auto;
+        max-width: 800px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-family: Arial, sans-serif;
+    }
+    .devis-wrapper h1 {
+        text-align: center;
+        color: #333;
+    }
+    .devis-wrapper p {
+        margin: 10px 0;
+        font-size: 16px;
+        color: #555;
+    }
+    .devis-wrapper h2 {
+        color: #007BFF;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .back-link {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 16px;
+        text-decoration: none;
+        color: #007BFF;
+    }
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
+/* Navigation */
+nav {
+    background-color: #4CAF50; /* Couleur principale du menu */
+    padding: 10px 0;
+}
+
+/* Menu principal */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alignement horizontal */
+    justify-content: center; /* Centrage horizontal */
+}
+
+/* Éléments principaux */
+.menu > li {
+    position: relative; /* Nécessaire pour les sous-menus */
+    margin: 0 15px;
+}
+
+/* Liens principaux */
+.menu > li > a {
+    text-decoration: none;
+    color: white; /* Texte blanc */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet au survol des liens principaux */
+.menu > li > a:hover {
+    background-color: #45a049;
+    border-radius: 5px;
+}
+
+/* Sous-menus */
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%; /* Juste en dessous de l'élément parent */
+    left: 0;
+    background-color: #333;
+    display: none; /* Masqué par défaut */
+    min-width: 200px; /* Largeur minimale */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+}
+
+/* Éléments du sous-menu */
+.submenu > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet au survol des liens du sous-menu */
+.submenu > li > a:hover {
+    background-color: #575757;
+}
+
+/* Afficher le sous-menu au survol */
+.menu > li:hover .submenu {
+    display: block; /* Le sous-menu devient visible */
+}
